@@ -2,18 +2,31 @@
 set -euo pipefail
 
 SKILL_DIR="$HOME/.claude/skills/idkwtd"
+SKILLS_ROOT="$HOME/.claude/skills"
 DATA_DIR="$HOME/.idkwtd"
+
+remove_symlinks() {
+  for link in "$SKILLS_ROOT"/*/; do
+    link="${link%/}"
+    [ -L "$link" ] && [ "$(readlink "$link")" = "idkwtd/$(basename "$link")" ] && rm -f "$link"
+  done
+  echo "Removed skill symlinks."
+}
 
 echo "IDKWTD Uninstall"
 echo ""
 
 if [ "${1:-}" = "--all" ]; then
+  echo "Removing skill symlinks..."
+  remove_symlinks
   echo "Removing skill files..."
   rm -rf "$SKILL_DIR"
   echo "Removing session data and config..."
   rm -rf "$DATA_DIR"
   echo "Done. Everything removed."
 elif [ "${1:-}" = "--keep-data" ] || [ -z "${1:-}" ]; then
+  echo "Removing skill symlinks..."
+  remove_symlinks
   echo "Removing skill files..."
   rm -rf "$SKILL_DIR"
   echo "Done. Skill removed."

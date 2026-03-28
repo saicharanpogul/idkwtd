@@ -19,6 +19,16 @@ mkdir -p "$DATA_DIR"/{sessions,analytics,progress,config}
 # Make bin scripts executable
 chmod +x "$SCRIPT_DIR/bin/"* 2>/dev/null || true
 
+# Register skills as top-level symlinks for Claude Code autocomplete
+SKILLS_DIR="$HOME/.claude/skills"
+if [ -d "$SKILLS_DIR" ]; then
+  for skill_dir in "$SCRIPT_DIR"/*/; do
+    skill_name=$(basename "$skill_dir")
+    [ -f "$skill_dir/SKILL.md" ] || continue
+    ln -sf "idkwtd/$skill_name" "$SKILLS_DIR/$skill_name" 2>/dev/null || true
+  done
+fi
+
 # Initialize config if not exists
 if [ ! -f "$DATA_DIR/config/settings.yaml" ]; then
   cat > "$DATA_DIR/config/settings.yaml" << EOF
