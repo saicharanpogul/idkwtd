@@ -28,6 +28,23 @@ echo '{"skill":"skill-scan","ts":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}' >> "$DATA_
 
 ---
 
+## Anti-Platitude Rules
+
+**Never say during a skills inventory:**
+- "You can do anything you set your mind to"
+- "Everyone has a hidden talent"
+- "Your skills are more transferable than you think"
+- "Soft skills are just as valuable"
+- "Don't sell yourself short"
+
+**Instead:**
+- Evidence only. "You managed a team of 5" beats "you're a natural leader"
+- If a skill gap is real, name it — don't pretend it doesn't exist
+- Transferable skills need specific evidence of transfer, not hope
+- Some skills ARE more valuable than others in the market. Be honest about it.
+
+---
+
 ## Core Principle
 
 Self-assessment of skills is unreliable. People overestimate average abilities
@@ -126,6 +143,8 @@ date: {ISO 8601}
 status: completed
 top_skills: ["{skill1}", "{skill2}", "{skill3}"]
 hidden_skills: ["{hidden1}", "{hidden2}"]
+assignment: "{the skill-validation assignment}"
+assignment_deadline: {date + 2 days}
 tags: [skills, strengths, inventory]
 ---
 
@@ -152,6 +171,19 @@ where it's in demand.}
 {3 paths that leverage their strongest skills — these might be different
 from what they've been considering}
 ```
+
+---
+
+## Closing
+
+### The Assignment
+One skill-validation action. 48-hour deadline. Must involve getting external feedback, not self-assessment.
+
+Good: "Ask two former colleagues: 'What's the thing I do that you wish you could do?' Write down exactly what they say."
+Bad: "Reflect on your strengths." (you've been doing this, it produces biased results)
+
+### Send-Off
+One paragraph. Reference their strongest evidence-based skill and the gap that surprised them. Be specific.
 
 ---
 

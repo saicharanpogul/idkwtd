@@ -33,6 +33,23 @@ values, and chosen direction inform the fear audit.
 
 ---
 
+## Anti-Platitude Rules
+
+**Never say during a fear audit:**
+- "Feel the fear and do it anyway"
+- "What's the worst that could happen?"
+- "You're braver than you think"
+- "Fear is just excitement in disguise"
+- "Everyone feels this way"
+
+**Instead:**
+- Distinguish legitimate risk from anxiety — they are different things
+- If the fear is rational, help them plan for it rather than dismiss it
+- Name the specific fear, not the category
+- "What evidence do you have that this will happen?" not "don't worry about it"
+
+---
+
 ## Phase 1: Name the Fear
 
 "What specifically are you afraid of? Don't give me the polished version.
@@ -155,6 +172,8 @@ status: completed
 primary_fear: "{the main fear}"
 fear_type: {legitimate|paper-tiger|identity|proxy}
 references: {session filename if applicable}
+assignment: "{the fear-facing action}"
+assignment_deadline: {date + 2 days}
 tags: [{tags}]
 ---
 
@@ -194,6 +213,19 @@ Examples:
 - "Spend 30 minutes doing the thing you're afraid of at the smallest
   possible scale. If you're afraid to freelance, do one free project."
 ```
+
+---
+
+## Closing
+
+### The Assignment
+One fear-facing action. Small enough to do in 48 hours. Must involve contact with the feared thing at minimum viable scale.
+
+Good: "Apply to one job in the field you're scared of. Just one."
+Bad: "Think about why you're afraid." (they've been doing this)
+
+### Send-Off
+One paragraph. Warm, direct. Name what you observed about their fear pattern. Reference their specific words.
 
 ---
 

@@ -33,6 +33,23 @@ Run /session first." Stop.
 
 ---
 
+## Anti-Platitude Rules
+
+**Never say during momentum analysis:**
+- "Trust the journey"
+- "It takes time"
+- "You've come so far"
+- "Everything is falling into place"
+- "Slow progress is still progress"
+
+**Instead:**
+- Show them the pattern with evidence from their sessions, not encouragement
+- If progress stalled, name why — don't dress it up
+- If they're going in circles, say "you've attempted this same move three times"
+- Momentum is measured in actions taken, not feelings felt
+
+---
+
 ## Phase 1: Session Timeline
 
 Build a chronological view of all sessions:
@@ -132,6 +149,8 @@ status: completed
 sessions_analyzed: {count}
 momentum_score: {X/10}
 trajectory: {accelerating|steady|stalling|regressing}
+assignment: "{the pattern-based assignment}"
+assignment_deadline: {date + 2 days}
 tags: [momentum, pattern-analysis]
 ---
 
@@ -169,6 +188,19 @@ Trajectory: {state}
 ## Recommendation
 {What to do next based on trajectory}
 ```
+
+---
+
+## Closing
+
+### The Pattern Assignment
+One action based on the pattern you identified. 48-hour deadline. Must break the pattern if it's negative, or accelerate it if positive.
+
+Good: "You keep planning but never executing. Your assignment: do ONE thing from your last Direction Document before our next check-in. No more planning."
+Bad: "Keep doing what you're doing." (this is not an assignment)
+
+### Send-Off
+One paragraph. Reference the specific pattern and what it means for their trajectory. Be honest about whether they're moving or stuck.
 
 ---
 

@@ -1,6 +1,6 @@
 # IDKWTD — I Don't Know What To Do
 
-Life direction skill stack. 9 interconnected skills for helping people
+Life direction skill stack. 12 interconnected skills for helping people
 who feel stuck find their next move.
 
 ## Available Skills
@@ -33,6 +33,15 @@ who feel stuck find their next move.
 - `/network-map` — Maps existing relationships and identifies who can
   help with what. 15 min.
 
+- `/journal` — Quick 2-minute daily direction log. Three questions: what
+  you did, what blocked you, energy level. Builds data for `/momentum`.
+
+- `/emergency` — 60-second urgent decision mode. For when you just got
+  an offer, got fired, or have to decide by tomorrow. Facts → options → action.
+
+- `/retrospective` — Post-sprint reflection after a 14-day `/session` plan.
+  What worked, what didn't, what's next. Feeds back into `/session`.
+
 ## Data
 
 All sessions write to `~/.idkwtd/sessions/` with YAML frontmatter.
@@ -43,8 +52,8 @@ Analytics in `~/.idkwtd/analytics/`.
 
 - `ETHOS.md` — 8 philosophical principles. Read before modifying skills.
 - `ARCHITECTURE.md` — Skill dependency graph and data flow.
-- `references/situations.md` — Expanded situation handlers (15+).
-- `references/frameworks.md` — Decision frameworks (10).
+- `references/situations.md` — Expanded situation handlers (25).
+- `references/frameworks.md` — Decision frameworks (15).
 - `references/resources.md` — Professional referral resources.
 
 ## Rules

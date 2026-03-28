@@ -1,6 +1,6 @@
 # IDKWTD — I Don't Know What To Do
 
-A structured life direction skill stack for Claude Code. 9 interconnected
+A structured life direction skill stack for Claude Code. 12 interconnected
 skills that help people who feel stuck find their next move.
 
 Not therapy. Not career coaching. Not motivational posters. A rigorous
@@ -36,6 +36,9 @@ see their situation clearly.
 | `/money-map` | 15min | Financial clarity and runway. |
 | `/skill-scan` | 15min | Evidence-based skills inventory. |
 | `/network-map` | 15min | Map relationships and opportunities. |
+| `/journal` | 2min | Daily direction log. Feeds `/momentum`. |
+| `/emergency` | 1min | Panic mode. Urgent decisions, fast clarity. |
+| `/retrospective` | 15min | Post-sprint reflection after 14-day plan. |
 
 Skills are interconnected. `/session` generates a Direction Document that
 `/check-in` reads. `/momentum` reads ALL sessions and finds patterns.
@@ -69,7 +72,8 @@ dependency graph.
 
 ### Anti-platitude system
 
-IDKWTD explicitly bans 10 common useless phrases and explains why each
+Every skill has its own anti-platitude rules — domain-specific banned phrases
+tailored to the skill's context. IDKWTD bans common useless phrases and explains why each
 is banned. Instead of "follow your passion," it asks "what's one thing
 you did where you lost track of time?" Instead of "believe in yourself,"
 it says "here's the evidence that you're actually good at this."
@@ -107,26 +111,29 @@ Skills available:
   /money-map      — Financial clarity and runway
   /skill-scan     — Evidence-based skills inventory
   /network-map    — Map your people and opportunities
+  /journal        — Daily 2-minute direction log
+  /emergency      — 60-second urgent decision mode
+  /retrospective  — Post-sprint reflection
 ```
 
 ### Claude Projects (claude.ai)
 
 1. Create a new Project
-2. Paste the contents of any `SKILL.md` into the project instructions
+2. Paste `dist/idkwtd-claude-project.md` into the project instructions
 3. Start a conversation
 
-Works well for `/session`, `/reality-check`, `/fear-audit` as standalone
-sessions. No cross-skill routing or session persistence — but the
-questioning framework and anti-platitude rules still guide the conversation.
+This is a pre-built single-file version optimized for Claude Projects.
+Alternatively, paste any individual `SKILL.md` for a specific skill.
 
 ### ChatGPT
 
 1. Go to **Explore GPTs → Create**
-2. Paste a `SKILL.md` into the Instructions field
+2. Paste `dist/idkwtd-gpt.md` into the Instructions field
 3. Publish (private or public)
 
-The bash preamble and `AskUserQuestion` formatting won't apply, but the
-session structure, phase flow, and anti-platitude rules work as-is.
+This is a pre-built single-file version optimized for ChatGPT. Strips
+bash preambles and Claude-specific tools while keeping the full phase
+structure, mode detection, and anti-platitude rules.
 Same approach works with **ChatGPT Projects** (paste into project instructions).
 
 ### Gemini
@@ -187,6 +194,15 @@ work without any AI. Read them.
 **Need to find opportunities:**
 `/skill-scan` → `/network-map`
 
+**Daily tracking between sessions:**
+`/journal` (2 minutes, builds data for `/momentum`)
+
+**Something just happened, need to decide NOW:**
+`/emergency` (60 seconds, facts → options → action)
+
+**Finished a 14-day sprint:**
+`/retrospective` → decide: stay the course, adjust, pivot, or pause
+
 ---
 
 ## Project Structure
@@ -214,10 +230,16 @@ idkwtd/
 ├── money-map/SKILL.md       # Financial clarity
 ├── skill-scan/SKILL.md      # Skills inventory
 ├── network-map/SKILL.md     # Relationship mapping
-└── references/              # Deep reference material
-    ├── situations.md        # 15+ situation handlers
-    ├── frameworks.md        # 10 decision frameworks
-    └── resources.md         # Professional referrals
+├── journal/SKILL.md         # Daily direction log
+├── emergency/SKILL.md       # Urgent decision mode
+├── retrospective/SKILL.md   # Post-sprint reflection
+├── references/              # Deep reference material
+│   ├── situations.md        # 25 situation handlers
+│   ├── frameworks.md        # 15 decision frameworks
+│   └── resources.md         # Professional referrals
+└── dist/                    # Ready-to-paste templates
+    ├── idkwtd-gpt.md        # ChatGPT Custom GPT system prompt
+    └��─ idkwtd-claude-project.md  # Claude Projects system prompt
 ```
 
 ---
@@ -234,7 +256,7 @@ therapy, get therapy. If you need structured thinking about your next move,
 use this.
 
 **vs. a single ChatGPT prompt:**
-Anyone can ask ChatGPT "I'm stuck, help me." The difference is 9
+Anyone can ask ChatGPT "I'm stuck, help me." The difference is 12
 interconnected skills with session persistence, accountability tracking,
 cross-session pattern analysis, anti-platitude enforcement, evidence-based
 methods, and a reference library of situation handlers and decision

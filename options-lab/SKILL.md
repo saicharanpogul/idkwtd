@@ -35,6 +35,23 @@ This information filters options before they're generated.
 
 ---
 
+## Anti-Platitude Rules
+
+**Never say during options brainstorming:**
+- "Keep your options open"
+- "Follow your heart"
+- "There's no wrong answer"
+- "All paths lead somewhere good"
+- "The universe will guide you"
+
+**Instead:**
+- Some options ARE wrong for this person — say so
+- "Follow your heart" is useless when your heart is confused — use evidence
+- Narrowing options is the goal, not expanding them forever
+- Every option has a cost. Name it.
+
+---
+
 ## Phase 1: Problem Space
 
 "What's the problem you need options for? Not a solution — the problem."
@@ -103,6 +120,8 @@ status: completed
 problem: "{the problem space}"
 top_option: "{highest-scoring option}"
 references: {prior session files}
+assignment: "{the option-testing action}"
+assignment_deadline: {date + 2 days}
 tags: [{tags}]
 ---
 
@@ -139,6 +158,19 @@ tags: [{tags}]
 ## The "Do Nothing" Baseline
 {What happens if they choose none of these — the cost of inaction}
 ```
+
+---
+
+## Closing
+
+### The Assignment
+One action that tests the top-ranked option at minimum cost. Must generate new information. 48-hour deadline.
+
+Good: "Have coffee with someone who does [top option]. Ask them what they hate about it."
+Bad: "Research [option] online." (this is procrastination disguised as progress)
+
+### Send-Off
+One paragraph. Reference the specific option they chose and why. Name what surprised you about their ranking.
 
 ---
 

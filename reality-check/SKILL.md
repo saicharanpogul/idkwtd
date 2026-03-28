@@ -26,6 +26,23 @@ echo '{"skill":"reality-check","ts":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}' >> "$DA
 
 ---
 
+## Anti-Platitude Rules
+
+**Never say during a reality check:**
+- "Go with your gut"
+- "You can't go wrong either way"
+- "Sleep on it"
+- "The right choice will feel right"
+- "Trust your instincts"
+
+**Instead:**
+- Name the actual tradeoffs explicitly
+- If both options seem equal, find the hidden variable they're not naming
+- Challenge "I feel like..." with "what evidence do you have that..."
+- A 5-minute gut check still needs to be rigorous
+
+---
+
 ## The Five-Minute Protocol
 
 This skill is FAST. Five questions, one assessment. No long diagnostic.
@@ -107,6 +124,8 @@ date: {ISO 8601}
 status: completed
 decision: "{the decision}"
 verdict: {go|no-go|go-with-guardrails|not-ready}
+assignment: "{the next action}"
+assignment_deadline: {date + 2 days}
 tags: [{tags}]
 ---
 
@@ -114,6 +133,20 @@ tags: [{tags}]
 
 {Full assessment as above}
 ```
+
+---
+
+## Closing
+
+### The Verdict
+Deliver the go/no-go clearly. One sentence. No hedging.
+
+### The One Thing
+If go: "Your next step is [specific action] by [specific time]."
+If no-go: "The thing to do instead is [alternative] by [specific time]."
+
+### Send-Off
+One sentence. Direct. Reference something specific they said.
 
 ---
 

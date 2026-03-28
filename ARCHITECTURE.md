@@ -19,8 +19,14 @@
            │
            ▼
       ┌──────────┐
-      │/momentum │  ← Reads ALL sessions. Pattern recognition.
+      │/momentum │  ← Reads ALL sessions + journals. Pattern recognition.
       │ (10min)  │
+      └──────────┘
+           ▲
+           │
+      ┌──────────┐
+      │/journal  │  ← Daily 2-min log. Feeds /momentum.
+      │ (2min)   │
       └──────────┘
 
   ┌──────────┐  ┌──────────┐  ┌──────────┐
@@ -35,7 +41,12 @@
                           │/network- │
                           │  map     │
                           │ (15min)  │
-                          └──────────┘
+                          └───────��──┘
+
+  ┌──────────┐         ┌───────────────┐
+  │/emergency│         │/retrospective │  ← Post-sprint. Reads Direction
+  │ (1min)   │         │   (15min)     │    Document + journals. Triggers
+  └──────────┘         └─────��─────────┘    next /session cycle.
 ```
 
 ## Data Flow
@@ -45,9 +56,12 @@ All sessions write to `~/.idkwtd/sessions/`. The filename convention is:
 
 This means:
 - /check-in can find previous /session documents
-- /momentum can scan ALL documents chronologically
+- /momentum can scan ALL documents chronologically (including /journal entries)
 - /fear-audit can reference constraints from a prior /session
 - /network-map can reference strengths from /skill-scan
+- /journal builds daily data that enriches /momentum analysis
+- /retrospective reads Direction Documents and journal entries for sprint review
+- /emergency writes decisions for later /check-in follow-up
 
 ## Skill Descriptions
 
@@ -62,6 +76,9 @@ This means:
 | /money-map | Financial clarity | Income/expenses/runway | Financial Reality Document |
 | /skill-scan | Evidence-based skills inventory | Work history/behaviors | Skills Portfolio |
 | /network-map | Relationship and opportunity map | People they know | Network Action Plan |
+| /journal | Daily 2-minute direction log | Action, blocker, energy | Journal Entry |
+| /emergency | 60-second urgent decision mode | Situation + deadline | Emergency Decision |
+| /retrospective | Post-sprint reflection | Direction Document + journals | Sprint Retrospective |
 
 ## Recommended Flows
 
@@ -78,6 +95,14 @@ This means:
 **Scared to act:** `/fear-audit` → `/options-lab` → `/session`
 
 **Need to leverage relationships:** `/skill-scan` → `/network-map`
+
+**Daily tracking:** `/journal` (2 min daily, feeds `/momentum`)
+
+**Urgent decision:** `/emergency` (60 seconds, facts → options → action)
+
+**Completed a 14-day sprint:** `/retrospective` → stay/adjust/pivot/pause → next `/session`
+
+**Full lifecycle:** `/session` → `/journal` daily → `/check-in` at day 7 → `/retrospective` at day 14 → next cycle
 
 ## Session Persistence
 
@@ -143,8 +168,14 @@ idkwtd/
 ├── money-map/SKILL.md       # Financial clarity
 ├── skill-scan/SKILL.md      # Skills inventory
 ├── network-map/SKILL.md     # Relationship mapping
-└── references/              # Deep reference material
-    ├── frameworks.md        # Decision frameworks
-    ├── situations.md        # Expanded situation handling
-    └── resources.md         # Professional resources
+├── journal/SKILL.md         # Daily direction log
+├── emergency/SKILL.md       # Urgent decision mode
+├── retrospective/SKILL.md   # Post-sprint reflection
+├── references/              # Deep reference material
+│   ├── frameworks.md        # 15 decision frameworks
+│   ├── situations.md        # 25 situation handlers
+│   └── resources.md         # Professional resources
+└── dist/                    # Ready-to-paste templates
+    ├── idkwtd-gpt.md        # ChatGPT Custom GPT system prompt
+    └── idkwtd-claude-project.md  # Claude Projects system prompt
 ```

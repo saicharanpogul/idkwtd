@@ -70,6 +70,123 @@ have it worse. Slow erosion of identity.
 4. Find examples of successful transitions at their age (web search)
 5. Start with the smallest possible experiment, not a full career change
 
+### "I have a chronic illness and I'm trying to figure out my career"
+
+**Emotional state:** Exhaustion mixed with guilt. Feels behind peers. Energy
+is limited and unpredictable. Every career framework assumes full health.
+
+**Common mistakes:**
+- Comparing to healthy peers
+- Ignoring energy as a constraint
+- Taking jobs that trigger flare-ups
+- Not disclosing when they should, or over-disclosing
+
+**IDKWTD approach:**
+1. Treat energy as the primary constraint — more important than money or
+   prestige
+2. Map energy patterns: what time of day, what activities, what environments
+3. Build career around energy peaks, not around what "should" be possible
+4. Constraints are features
+
+### "Golden handcuffs — RSUs, pension, deferred comp"
+
+**Emotional state:** Trapped but comfortable. Knows they should leave but the
+financial cost feels enormous. Feels guilty for complaining about being
+well-paid.
+
+**Common mistakes:**
+- Only counting what they'd lose, not what they'd gain
+- Treating unvested compensation as guaranteed
+- Staying "one more year" repeatedly
+- Conflating financial security with happiness
+
+**IDKWTD approach:**
+1. Calculate the ACTUAL number: what's the walk-away cost? Often smaller
+   than imagined
+2. Use the Reversibility Matrix — is this truly irreversible?
+3. Map the cost of staying (health, relationships, years of your life)
+   against the cost of leaving
+4. Name the sunk cost fallacy directly
+
+### "Post-military transition"
+
+**Emotional state:** Identity loss. Skills don't translate to civilian
+language. Structure suddenly gone. May feel simultaneously overqualified
+and underqualified.
+
+**Common mistakes:**
+- Underselling military experience
+- Only looking at obvious transitions (security, defense contractors)
+- Isolating from civilian networks
+- Missing the loss of identity and community, not just the job
+
+**IDKWTD approach:**
+1. Translate skills into civilian evidence: "managed logistics for 200
+   people" not "served in the military"
+2. Map the identity transition separately from the career transition —
+   they're different problems
+3. Use /network-map to build civilian connections
+
+### "First-generation — no family playbook"
+
+**Emotional state:** Making it up as they go. No one in their family has
+done this before. Torn between family expectations and unfamiliar
+opportunities. Imposter syndrome amplified.
+
+**Common mistakes:**
+- Not asking for help because they don't know what to ask
+- Accepting the first opportunity instead of evaluating options
+- Feeling disloyal for wanting something different
+- No mentorship model
+
+**IDKWTD approach:**
+1. Normalize the disorientation — this IS harder without a playbook
+2. Use /network-map specifically to find people one step ahead (not five
+   steps ahead)
+3. Focus on building the map they don't have rather than following one
+   that doesn't exist
+
+### "Returning to work after years away"
+
+**Emotional state:** Confidence gap. Skills feel outdated. Identity has
+shifted (from professional to parent/caregiver and back). Worried about
+explaining the gap.
+
+**Common mistakes:**
+- Apologizing for the gap
+- Trying to return to the exact same role/level
+- Ignoring skills gained during time away (managing a household IS project
+  management)
+- Undervaluing themselves in negotiations
+
+**IDKWTD approach:**
+1. Use /skill-scan to inventory skills gained during time away — they're
+   real skills
+2. Reframe the gap as a choice, not a failure
+3. Target roles that value the combination of prior experience + life
+   experience
+4. Don't aim for where you left off; aim for where your skills point now
+
+### "Mid-career burnout vs. wrong career"
+
+**Emotional state:** Can't tell if they hate THIS job or THE job. Exhausted.
+Fantasizing about completely different lives. Dreading Monday but not sure
+if switching companies or switching careers is the answer.
+
+**Common mistakes:**
+- Quitting in the burnout trough
+- Assuming burnout = wrong career (sometimes it's wrong company, wrong
+  manager, wrong workload)
+- Making permanent decisions from temporary states
+- Not taking recovery time before deciding
+
+**IDKWTD approach:**
+1. Separate the variables: Is it the work itself, the environment, the
+   people, or the pace? The Energy Audit framework helps here.
+2. If they've been burnt out for 6+ months, suggest recovery before any
+   career decision
+3. "Don't make a permanent decision from a temporary state"
+
 ---
 
 ## Life Situations
@@ -121,6 +238,64 @@ have it worse. Slow erosion of identity.
    are closer than they think, just framed differently
 5. If genuine conflict: help them articulate their position to their family
    with respect and clarity
+
+### "Caring for aging parents"
+
+**Emotional state:** Sandwich generation pressure. Career decisions now have
+someone else's wellbeing attached. Guilt about wanting their own life.
+Siblings may not be sharing the load equally.
+
+**Common mistakes:**
+- Sacrificing career entirely without exploring alternatives
+- Not having honest conversations with siblings
+- Ignoring their own burnout
+- Making assumptions about what parents actually want
+
+**IDKWTD approach:**
+1. Map the actual caregiving load: hours per week, tasks, who else helps
+2. Use /money-map to understand the financial picture (parents' resources +
+   their own)
+3. This is a constraint to build around, not a reason to stop building
+4. Name the resentment if it exists — it's useful information
+
+### "Grief — someone close died"
+
+**Emotional state:** Nothing makes sense. Priorities have shifted but they
+don't know to what. May feel urgency to change everything or paralysis to
+change nothing. Previous goals may feel meaningless.
+
+**Common mistakes:**
+- Making big decisions while actively grieving
+- Using busyness to avoid grief
+- Assuming grief has a timeline
+- Ignoring how loss reshapes values
+
+**IDKWTD approach:**
+1. If grief is fresh (< 3 months), this is NOT the time for a full /session.
+   Acknowledge the loss directly.
+2. Suggest they focus on stability, not direction
+3. If grief is older but still reshaping them, use Phase 2 values extraction
+   — grief often clarifies what actually matters
+4. Be careful: IDKWTD is not grief counseling
+
+### "Immigration / visa constraints"
+
+**Emotional state:** Career options filtered by legal status. May be highly
+skilled but constrained to specific employers or industries. Feels like
+playing the game on hard mode. Uncertainty about long-term status adds
+anxiety to every decision.
+
+**Common mistakes:**
+- Accepting bad conditions because "at least I have a visa"
+- Not exploring all legal options
+- Comparing to people without visa constraints
+- Planning only for the visa timeline, not their actual life
+
+**IDKWTD approach:**
+1. Visa status is a constraint — treat it as a filter, not a cage
+2. Map what IS possible within the constraint, not what isn't
+3. Use /money-map to understand the financial safety net needed
+4. Connect with others who've navigated the same system via /network-map
 
 ---
 
@@ -184,6 +359,27 @@ won't act until the plan is "perfect."
    to test this WITHOUT a complete plan?"
 4. Set the quality bar explicitly: "70% sure is enough to start. You'll
    learn more from one week of doing than one month of planning."
+
+### Neurodivergent Decision-Making
+
+**Signs:** Standard career advice doesn't fit. May have high capability in
+specific areas but struggle with things others find easy. Executive function
+challenges make "just take the first step" advice useless. Hyperfocus can
+be a superpower or a trap.
+
+**Common mistakes:**
+- Forcing neurotypical frameworks
+- Ignoring energy/executive function as real constraints
+- Not leveraging hyperfocus areas
+- Internalizing "lazy" narratives
+
+**IDKWTD approach:**
+1. Redesign the assignment structure: break it into smaller steps with
+   external accountability
+2. Map energy and focus patterns — when do they have capacity?
+3. Build around peaks. Treat executive function as a constraint like money
+   — work with it, not against it.
+4. The 48-hour assignment may need to be a 24-hour micro-action
 
 ---
 

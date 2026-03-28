@@ -158,3 +158,115 @@ The experiment generates information. Information reduces uncertainty.
 Reduced uncertainty enables better decisions.
 
 Used in: All skills. This is the most important framework in IDKWTD.
+
+---
+
+## The Obligation Audit
+
+Separate "I should" from "I want." List every obligation driving a
+decision. For each one, ask: "Whose voice is this?" If it's a parent, a
+culture, a past version of yourself — it's not YOUR obligation. You can
+choose to honor it, but name that it's a choice.
+
+When to use it: When someone can't articulate what they want because the
+noise of what they "should" do is too loud. Common in Escape and
+Excavation modes.
+
+How to apply:
+1. List every "should" attached to the decision
+2. For each: whose expectation is this?
+3. Mark each as: mine (I'd choose this even if no one was watching) or
+   inherited (someone else's expectation I've absorbed)
+4. For inherited obligations: "Would you choose this if you had no
+   audience?"
+
+Used in: /session (Phase 2), /fear-audit (identity fears), /reality-check
+
+---
+
+## The Opportunity Cost Frame
+
+Every choice has a price — not just what it costs, but what you give up.
+Most people evaluate options in isolation. This framework forces comparison:
+"If you spend 2 years on Path A, what can't you do during those 2 years?"
+
+When to use it: When someone is evaluating options without considering what
+they're sacrificing. Common in Filter and Decision modes.
+
+How to apply:
+1. For the top 2-3 options: what does each cost in time, money, energy,
+   relationships?
+2. For each: what becomes impossible or significantly harder if you choose
+   this?
+3. The option with the lowest opportunity cost for the highest return is
+   the rational choice
+4. If the rational choice feels wrong, that's useful information —
+   investigate
+
+Used in: /options-lab, /session (Phase 4), /money-map
+
+---
+
+## The Stakeholder Map
+
+Decisions don't happen in isolation. Map who is affected by this decision,
+how, and how much. Not to let others decide for you — to make an informed
+choice about whose needs you're prioritizing and whose you're not.
+
+When to use it: When a decision affects dependents, partners, family, or
+team members. Common in Escape and Decision modes.
+
+How to apply:
+1. List every person affected by this decision
+2. For each: how are they affected? How much? Can the impact be mitigated?
+3. Separate "they'll be disappointed" from "they'll be materially harmed"
+4. Rank by actual impact, not emotional guilt
+5. You can still choose your own needs — but do it consciously
+
+Used in: /session (Phase 2), /reality-check, /money-map
+
+---
+
+## The Stability-Growth Tradeoff
+
+Almost every life decision sits on a spectrum between stability (safe,
+known, lower upside) and growth (risky, unknown, higher upside). Neither
+is inherently right. The question is: what can you afford right now? Growth
+requires a stability foundation. Stability without growth becomes
+stagnation.
+
+When to use it: When someone is choosing between a safe option and an
+exciting one. When "I want to but I can't afford to" is the blocker.
+
+How to apply:
+1. Map current stability: financial runway, health, relationships, housing
+2. Calculate "growth budget" — how much instability can you absorb right
+   now?
+3. If stability is solid: lean toward growth
+4. If stability is shaky: shore it up first, then grow
+5. The answer changes over time — revisit quarterly
+
+Used in: /session (Phase 4), /money-map, /options-lab
+
+---
+
+## The Pilot Test
+
+Smaller than an MVP. Before committing to anything, design a test you can
+run in one day or one conversation that generates real information. Not
+research. Not thinking. Contact with reality.
+
+When to use it: Always. Every assignment should be a Pilot Test. If someone
+can't pilot-test an option, they can't commit to it.
+
+How to apply:
+1. Take the top option
+2. Ask: "What's the smallest possible version of this you can test in
+   24 hours?"
+3. It must involve another human (not just googling)
+4. After the test: "What did you learn that you couldn't have learned by
+   thinking?"
+5. One test is worth ten hours of deliberation
+
+Used in: /session (Phase 6 assignments), /options-lab, /reality-check,
+/fear-audit

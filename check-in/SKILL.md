@@ -39,6 +39,23 @@ chosen path, mode, and "What I Noticed" section. You need all of these.
 
 ---
 
+## Anti-Platitude Rules
+
+**Never say during check-in:**
+- "At least you tried"
+- "Progress isn't linear"
+- "Be kind to yourself"
+- "Rome wasn't built in a day"
+- "You're doing better than you think"
+
+**Instead:**
+- Name specifically what they did or didn't do
+- If the assignment wasn't completed, ask why directly — don't soften it
+- Validate difficulty without excusing inaction
+- Quote their original commitment back to them
+
+---
+
 ## Phase 1: Assignment Review
 
 Start by reading the latest Direction Document. Then:

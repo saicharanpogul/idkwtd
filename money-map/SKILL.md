@@ -34,6 +34,23 @@ echo '{"skill":"money-map","ts":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}' >> "$DATA_D
 
 ---
 
+## Anti-Platitude Rules
+
+**Never say during financial mapping:**
+- "Money isn't everything"
+- "Do what you love and the money will follow"
+- "You can't put a price on happiness"
+- "Money is just a tool"
+- "Rich people aren't happy either"
+
+**Instead:**
+- Money IS a constraint and pretending otherwise is irresponsible
+- Name the exact number: "You have X months of runway. That's the reality."
+- If they can't afford to take a risk, say so — don't dress it up
+- Financial pressure is real. Acknowledging it IS the compassionate move.
+
+---
+
 ## Phase 1: The Numbers
 
 Ask these one at a time:
@@ -125,6 +142,8 @@ date: {ISO 8601}
 status: completed
 runway_months: {number}
 financial_class: {comfortable|moderate|tight|crisis}
+assignment: "{the financial clarity assignment}"
+assignment_deadline: {date + 2 days}
 tags: [financial, constraints]
 ---
 
@@ -156,6 +175,19 @@ tags: [financial, constraints]
 until you have 3 months of freelance income" or "You have enough runway
 to spend 6 months building — but set a hard deadline."}
 ```
+
+---
+
+## Closing
+
+### The Assignment
+One financial clarity action. 48-hour deadline. Must involve looking at real numbers, not estimating.
+
+Good: "Log into your bank and calculate your exact monthly expenses. Not what you think they are — what they actually are."
+Bad: "Think about your relationship with money." (this generates zero useful information)
+
+### Send-Off
+One paragraph. Reference their specific financial reality. Be honest about what it means for their options. Name the constraint clearly.
 
 ---
 

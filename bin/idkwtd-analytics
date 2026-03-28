@@ -19,7 +19,7 @@ echo ""
 
 # Skill usage breakdown
 echo "Skill usage:"
-for SKILL in session check-in reality-check fear-audit options-lab momentum money-map skill-scan network-map; do
+for SKILL in session check-in reality-check fear-audit options-lab momentum money-map skill-scan network-map journal emergency retrospective; do
   COUNT=$(ls "$SESSIONS_DIR"/"$SKILL"-*.md 2>/dev/null | wc -l | tr -d ' ')
   [ "$COUNT" -gt 0 ] && echo "  /$SKILL: $COUNT"
 done
