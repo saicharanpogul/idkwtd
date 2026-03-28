@@ -2,6 +2,17 @@
 
 All notable changes to IDKWTD will be documented in this file.
 
+## [1.0.1] - 2026-03-28
+
+### Improved
+- Fixed placeholder URLs in README and session skill
+- Added `bin/idkwtd` unified CLI dispatcher
+- Added `bin/idkwtd-uninstall` for clean removal
+- Added username detection to setup and config
+- Expanded international crisis resources (US 988, UK Samaritans, Australia Lifeline, Canada 988, Befrienders Worldwide)
+- Fixed `sed -i` macOS compatibility in idkwtd-config
+- Cleaned up defensive language in CONTRIBUTING.md
+
 ## [1.0.0] - 2026-03-28
 
 ### Added

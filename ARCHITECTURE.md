@@ -128,10 +128,12 @@ idkwtd/
 ├── CONTRIBUTING.md          # How to contribute
 ├── CHANGELOG.md             # Version history
 ├── bin/                     # Infrastructure scripts
+│   ├── idkwtd               # Unified CLI dispatcher
 │   ├── idkwtd-config        # Config get/set
 │   ├── idkwtd-sessions      # Session listing/reading
 │   ├── idkwtd-analytics     # Usage dashboard
-│   └── idkwtd-progress      # Progress tracker
+│   ├── idkwtd-progress      # Progress tracker
+│   └── idkwtd-uninstall     # Clean removal
 ├── session/SKILL.md         # Full diagnostic
 ├── check-in/SKILL.md        # Accountability follow-up
 ├── reality-check/SKILL.md   # Quick decision gut-check

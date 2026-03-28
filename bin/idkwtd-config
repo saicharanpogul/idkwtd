@@ -10,7 +10,7 @@ case "${1:-}" in
     ;;
   set)
     if grep -q "^${2:-}:" "$CONFIG_FILE" 2>/dev/null; then
-      sed -i "s/^${2}: .*/${2}: ${3}/" "$CONFIG_FILE"
+      sed -i '' "s/^${2}: .*/${2}: ${3}/" "$CONFIG_FILE"
     else
       echo "${2}: ${3}" >> "$CONFIG_FILE"
     fi

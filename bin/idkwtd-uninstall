@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SKILL_DIR="$HOME/.claude/skills/idkwtd"
+DATA_DIR="$HOME/.idkwtd"
+
+echo "IDKWTD Uninstall"
+echo ""
+
+if [ "${1:-}" = "--all" ]; then
+  echo "Removing skill files..."
+  rm -rf "$SKILL_DIR"
+  echo "Removing session data and config..."
+  rm -rf "$DATA_DIR"
+  echo "Done. Everything removed."
+elif [ "${1:-}" = "--keep-data" ] || [ -z "${1:-}" ]; then
+  echo "Removing skill files..."
+  rm -rf "$SKILL_DIR"
+  echo "Done. Skill removed."
+  echo ""
+  echo "Session data preserved at $DATA_DIR"
+  echo "To remove that too: idkwtd-uninstall --all"
+else
+  echo "Usage: idkwtd-uninstall [--keep-data|--all]"
+  echo ""
+  echo "  --keep-data  Remove skill, keep session data (default)"
+  echo "  --all        Remove everything including session history"
+fi

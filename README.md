@@ -89,7 +89,7 @@ with deadlines and `/check-in` holds you accountable.
 
 ```bash
 # Clone to your skills directory
-git clone https://github.com/[your-username]/idkwtd.git ~/.claude/skills/idkwtd
+git clone https://github.com/saicharanpogul/idkwtd.git ~/.claude/skills/idkwtd
 
 # Run setup
 cd ~/.claude/skills/idkwtd && chmod +x setup && ./setup
@@ -157,10 +157,12 @@ idkwtd/
 ├── CONTRIBUTING.md          # How to contribute
 ├── CHANGELOG.md             # Version history
 ├── bin/                     # Infrastructure
+│   ├── idkwtd               # Unified CLI dispatcher
 │   ├── idkwtd-config        # Config management
 │   ├── idkwtd-sessions      # Session listing
 │   ├── idkwtd-analytics     # Usage dashboard
-│   └── idkwtd-progress      # Progress tracker
+│   ├── idkwtd-progress      # Progress tracker
+│   └── idkwtd-uninstall     # Clean removal
 ├── session/SKILL.md         # Full diagnostic (688 lines)
 ├── check-in/SKILL.md        # Accountability follow-up
 ├── reality-check/SKILL.md   # Quick decision check
@@ -226,7 +228,7 @@ it was worth building.
 
 ---
 
-Built by [@saicharan](https://twitter.com/saicharan) during a weekend
+Built by [@pogul_saicharan](https://x.com/pogul_saicharan) during a weekend
 break from [Roaster V2](https://roaster.fun).
 
 Because sometimes the builder needs building too.

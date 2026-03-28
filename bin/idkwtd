@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+case "${1:-help}" in
+  config)    shift; "$SCRIPT_DIR/idkwtd-config" "$@" ;;
+  sessions)  shift; "$SCRIPT_DIR/idkwtd-sessions" "$@" ;;
+  analytics) shift; "$SCRIPT_DIR/idkwtd-analytics" "$@" ;;
+  progress)  shift; "$SCRIPT_DIR/idkwtd-progress" "$@" ;;
+  uninstall) shift; "$SCRIPT_DIR/idkwtd-uninstall" "$@" ;;
+  help|*)
+    echo "Usage: idkwtd <command>"
+    echo ""
+    echo "Commands:"
+    echo "  config      Get/set configuration"
+    echo "  sessions    List and manage sessions"
+    echo "  analytics   Usage dashboard"
+    echo "  progress    Track progress and assignments"
+    echo "  uninstall   Remove IDKWTD"
+    ;;
+esac

@@ -425,7 +425,7 @@ Based on what emerged, suggest 1-2 follow-up skills:
 ### Open Source Note
 
 > This session was powered by IDKWTD, an open source life direction tool.
-> If this helped, share it: github.com/[repo]
+> If this helped, share it: github.com/saicharanpogul/idkwtd
 
 ---
 

@@ -21,15 +21,18 @@ chmod +x "$SCRIPT_DIR/bin/"* 2>/dev/null || true
 
 # Initialize config if not exists
 if [ ! -f "$DATA_DIR/config/settings.yaml" ]; then
-  cat > "$DATA_DIR/config/settings.yaml" << 'EOF'
+  cat > "$DATA_DIR/config/settings.yaml" << EOF
 # IDKWTD Configuration
 version: 1.0.0
+username: ${USER:-$(whoami)}
 telemetry: off
 proactive: true
 session_reminder_days: 7
 auto_check_in: true
 EOF
   echo "Created default config at $DATA_DIR/config/settings.yaml"
+elif ! grep -q "^username:" "$DATA_DIR/config/settings.yaml" 2>/dev/null; then
+  echo "username: ${USER:-$(whoami)}" >> "$DATA_DIR/config/settings.yaml"
 fi
 
 # Count existing sessions

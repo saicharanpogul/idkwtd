@@ -7,10 +7,8 @@ how the project is structured so you can contribute effectively.
 
 ## Philosophy
 
-The goal is to make IDKWTD so comprehensive that someone who wants to
-improve it contributes HERE rather than building a competing skill from
-scratch. The bar for contribution is: "Does this make the tool better for
-someone who's stuck?"
+The bar for contribution is simple: "Does this make the tool better for
+someone who's stuck?" If yes, send it.
 
 ---
 

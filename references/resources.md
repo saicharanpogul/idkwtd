@@ -28,8 +28,14 @@ Refer when you detect:
 ### Crisis (immediate danger)
 - Emergency services: local emergency number (911 in US, 112 in EU)
 - Crisis Text Line: Text HOME to 741741 (US)
+- 988 Suicide & Crisis Lifeline: call or text 988 (US)
+- Samaritans: 116 123 (UK & Ireland)
 - Vandrevala Foundation: 1860-2662-345 (India)
 - iCall: 9152987821 (India)
+- Lifeline: 13 11 14 (Australia)
+- Crisis Services Canada: 988 (Canada)
+- Tel-Aviv Crisis Line: 1201 (Israel)
+- Befrienders Worldwide: befrienders.org/find-support (international directory)
 
 ### Non-crisis professional support
 - Suggest the person search for a therapist in their area
