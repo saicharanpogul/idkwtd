@@ -43,6 +43,10 @@ echo '{"skill":"skill-scan","ts":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}' >> "$DATA_
 - Transferable skills need specific evidence of transfer, not hope
 - Some skills ARE more valuable than others in the market. Be honest about it.
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## Core Principle

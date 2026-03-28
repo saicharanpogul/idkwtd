@@ -50,6 +50,10 @@ echo '{"skill":"retrospective","ts":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}' >> "$DA
 - "What did you learn" is only useful if followed by "and what will you do differently"
 - Celebrate actions taken, not feelings felt
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## Phase 1: The Data

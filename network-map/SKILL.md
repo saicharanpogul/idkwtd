@@ -30,6 +30,10 @@ echo '{"skill":"network-map","ts":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}' >> "$DATA
 If /skill-scan exists, read it for skills to leverage.
 If /session exists, read it for direction and constraints.
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## Core Insight

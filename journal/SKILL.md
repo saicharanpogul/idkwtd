@@ -42,6 +42,10 @@ If a latest session exists, read it silently for context. Don't mention it unles
 - If they're stuck in the same pattern, name it
 - Keep it fast. This is a 2-minute tool, not therapy.
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## The Three Questions

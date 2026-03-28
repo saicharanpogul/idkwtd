@@ -41,6 +41,10 @@ echo '{"skill":"reality-check","ts":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}' >> "$DA
 - Challenge "I feel like..." with "what evidence do you have that..."
 - A 5-minute gut check still needs to be rigorous
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## The Five-Minute Protocol

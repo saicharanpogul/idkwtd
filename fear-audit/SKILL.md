@@ -48,6 +48,10 @@ values, and chosen direction inform the fear audit.
 - Name the specific fear, not the category
 - "What evidence do you have that this will happen?" not "don't worry about it"
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## Phase 1: Name the Fear

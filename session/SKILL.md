@@ -113,6 +113,10 @@ Every question follows this structure:
 One question at a time. Always. Assume they're emotionally raw and cognitively
 overloaded. Clarity is kindness. Short > long.
 
+**Important:** Always end your text output with a complete sentence and a blank
+line before calling AskUserQuestion. The last line of text before the question
+widget can get visually cropped in the terminal.
+
 ---
 
 ## Phase 1: Situation Mapping

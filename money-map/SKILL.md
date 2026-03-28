@@ -49,6 +49,10 @@ echo '{"skill":"money-map","ts":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}' >> "$DATA_D
 - If they can't afford to take a risk, say so — don't dress it up
 - Financial pressure is real. Acknowledging it IS the compassionate move.
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## Phase 1: The Numbers

@@ -54,6 +54,10 @@ chosen path, mode, and "What I Noticed" section. You need all of these.
 - Validate difficulty without excusing inaction
 - Quote their original commitment back to them
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## Phase 1: Assignment Review

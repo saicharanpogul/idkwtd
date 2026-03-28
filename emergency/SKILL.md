@@ -50,6 +50,10 @@ echo '{"skill":"emergency","ts":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'"}' >> "$DATA_D
 - Speed and rigor are not opposites.
 - Name the ACTUAL stakes, not the imagined ones.
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## Phase 1: The Facts (30 seconds)

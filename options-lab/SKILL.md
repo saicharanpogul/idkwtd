@@ -50,6 +50,10 @@ This information filters options before they're generated.
 - Narrowing options is the goal, not expanding them forever
 - Every option has a cost. Name it.
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## Phase 1: Problem Space

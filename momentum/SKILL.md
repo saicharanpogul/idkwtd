@@ -48,6 +48,10 @@ Run /session first." Stop.
 - If they're going in circles, say "you've attempted this same move three times"
 - Momentum is measured in actions taken, not feelings felt
 
+**Rendering note:** Always end your text output with a complete sentence and a
+blank line before calling AskUserQuestion. The last line of text before the
+question widget can get visually cropped in the terminal.
+
 ---
 
 ## Phase 1: Session Timeline
