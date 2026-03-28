@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+set -euo pipefail
+CONFIG_FILE="$HOME/.idkwtd/config/settings.yaml"
+mkdir -p "$(dirname "$CONFIG_FILE")"
+[ ! -f "$CONFIG_FILE" ] && echo "version: 1.0.0" > "$CONFIG_FILE"
+
+case "${1:-}" in
+  get)
+    grep "^${2:-}:" "$CONFIG_FILE" 2>/dev/null | sed 's/^[^:]*: *//' || echo ""
+    ;;
+  set)
+    if grep -q "^${2:-}:" "$CONFIG_FILE" 2>/dev/null; then
+      sed -i "s/^${2}: .*/${2}: ${3}/" "$CONFIG_FILE"
+    else
+      echo "${2}: ${3}" >> "$CONFIG_FILE"
+    fi
+    echo "Set ${2} = ${3}"
+    ;;
+  *)
+    echo "Usage: idkwtd-config get|set <key> [value]"
+    ;;
+esac

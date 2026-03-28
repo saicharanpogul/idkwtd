@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ANALYTICS_DIR="$HOME/.idkwtd/analytics"
+SESSIONS_DIR="$HOME/.idkwtd/sessions"
+mkdir -p "$ANALYTICS_DIR"
+
+echo "╔══════════════════════════════════════╗"
+echo "║     IDKWTD Analytics Dashboard       ║"
+echo "╚══════════════════════════════════════╝"
+echo ""
+
+# Session counts
+TOTAL=$(find "$SESSIONS_DIR" -name "*.md" -type f 2>/dev/null | wc -l | tr -d ' ')
+ACTIVE=$(grep -rl "^status: active" "$SESSIONS_DIR" 2>/dev/null | wc -l | tr -d ' ')
+COMPLETED=$(grep -rl "^status: completed" "$SESSIONS_DIR" 2>/dev/null | wc -l | tr -d ' ')
+
+echo "Sessions: $TOTAL total | $ACTIVE active | $COMPLETED completed"
+echo ""
+
+# Skill usage breakdown
+echo "Skill usage:"
+for SKILL in session check-in reality-check fear-audit options-lab momentum money-map skill-scan network-map; do
+  COUNT=$(ls "$SESSIONS_DIR"/"$SKILL"-*.md 2>/dev/null | wc -l | tr -d ' ')
+  [ "$COUNT" -gt 0 ] && echo "  /$SKILL: $COUNT"
+done
+echo ""
+
+# Mode distribution
+echo "Modes used:"
+for MODE in recovery escape filter discovery decision excavation; do
+  COUNT=$(grep -rl "^mode: $MODE" "$SESSIONS_DIR" 2>/dev/null | wc -l | tr -d ' ')
+  [ "$COUNT" -gt 0 ] && echo "  $MODE: $COUNT"
+done
+echo ""
+
+# Assignment tracking
+if [ -f "$ANALYTICS_DIR/assignments.jsonl" ]; then
+  ASSIGNED=$(wc -l < "$ANALYTICS_DIR/assignments.jsonl" | tr -d ' ')
+  DONE=$(grep -c '"completed"' "$ANALYTICS_DIR/assignments.jsonl" 2>/dev/null || echo "0")
+  echo "Assignments: $ASSIGNED given | $DONE completed"
+else
+  echo "Assignments: no data yet"
+fi

@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# IDKWTD Setup Script
+# Installs the life direction skill stack
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DATA_DIR="$HOME/.idkwtd"
+
+echo "╔══════════════════════════════════════════╗"
+echo "║  IDKWTD — I Don't Know What To Do        ║"
+echo "║  Life Direction Skill Stack               ║"
+echo "╚══════════════════════════════════════════╝"
+echo ""
+
+# Create data directories
+mkdir -p "$DATA_DIR"/{sessions,analytics,progress,config}
+
+# Make bin scripts executable
+chmod +x "$SCRIPT_DIR/bin/"* 2>/dev/null || true
+
+# Initialize config if not exists
+if [ ! -f "$DATA_DIR/config/settings.yaml" ]; then
+  cat > "$DATA_DIR/config/settings.yaml" << 'EOF'
+# IDKWTD Configuration
+version: 1.0.0
+telemetry: off
+proactive: true
+session_reminder_days: 7
+auto_check_in: true
+EOF
+  echo "Created default config at $DATA_DIR/config/settings.yaml"
+fi
+
+# Count existing sessions
+SESSION_COUNT=$(find "$DATA_DIR/sessions" -name "*.md" -type f 2>/dev/null | wc -l | tr -d ' ')
+
+echo "Setup complete."
+echo ""
+echo "Data directory: $DATA_DIR"
+echo "Existing sessions: $SESSION_COUNT"
+echo ""
+echo "Available skills:"
+echo "  /session        — Full life direction diagnostic"
+echo "  /check-in       — Follow up on a previous session"
+echo "  /reality-check  — Quick gut check on a decision"
+echo "  /fear-audit     — Deep dive into what's blocking you"
+echo "  /options-lab    — Brainstorm and stress-test options"
+echo "  /momentum       — Track progress across sessions"
+echo "  /money-map      — Financial clarity and runway"
+echo "  /skill-scan     — Evidence-based skills inventory"
+echo "  /network-map    — Map your people and opportunities"
+echo ""
+echo "Start with: /session"

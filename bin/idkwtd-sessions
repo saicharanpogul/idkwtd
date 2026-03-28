@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+set -euo pipefail
+SESSIONS_DIR="$HOME/.idkwtd/sessions"
+mkdir -p "$SESSIONS_DIR"
+
+case "${1:-list}" in
+  list)
+    echo "=== IDKWTD Sessions ==="
+    if [ -z "$(ls -A "$SESSIONS_DIR" 2>/dev/null)" ]; then
+      echo "No sessions yet. Start with /session."
+    else
+      ls -lt "$SESSIONS_DIR"/*.md 2>/dev/null | while read -r line; do
+        FILE=$(echo "$line" | awk '{print $NF}')
+        BASENAME=$(basename "$FILE" .md)
+        SKILL=$(grep "^skill:" "$FILE" 2>/dev/null | sed 's/^skill: *//' || echo "unknown")
+        MODE=$(grep "^mode:" "$FILE" 2>/dev/null | sed 's/^mode: *//' || echo "—")
+        STATUS=$(grep "^status:" "$FILE" 2>/dev/null | sed 's/^status: *//' || echo "—")
+        ASSIGNMENT=$(grep "^assignment:" "$FILE" 2>/dev/null | sed 's/^assignment: *//' | tr -d '"' || echo "—")
+        echo ""
+        echo "  $BASENAME"
+        echo "    Skill: $SKILL | Mode: $MODE | Status: $STATUS"
+        echo "    Assignment: $ASSIGNMENT"
+      done
+    fi
+    ;;
+  latest)
+    ls -t "$SESSIONS_DIR"/*.md 2>/dev/null | head -1
+    ;;
+  latest-session)
+    ls -t "$SESSIONS_DIR"/session-*.md 2>/dev/null | head -1
+    ;;
+  count)
+    find "$SESSIONS_DIR" -name "*.md" -type f 2>/dev/null | wc -l | tr -d ' '
+    ;;
+  by-skill)
+    ls -t "$SESSIONS_DIR"/"${2:-session}"-*.md 2>/dev/null
+    ;;
+  active)
+    grep -l "^status: active" "$SESSIONS_DIR"/*.md 2>/dev/null | while read -r f; do
+      echo "$(basename "$f" .md)"
+    done
+    ;;
+  overdue)
+    NOW=$(date +%s)
+    grep -l "^assignment_deadline:" "$SESSIONS_DIR"/*.md 2>/dev/null | while read -r f; do
+      DEADLINE=$(grep "^assignment_deadline:" "$f" | sed 's/^assignment_deadline: *//')
+      DEADLINE_TS=$(date -d "$DEADLINE" +%s 2>/dev/null || date -j -f "%Y-%m-%d" "$DEADLINE" +%s 2>/dev/null || echo "0")
+      if [ "$NOW" -gt "$DEADLINE_TS" ] && [ "$DEADLINE_TS" -gt 0 ]; then
+        STATUS=$(grep "^status:" "$f" | sed 's/^status: *//')
+        [ "$STATUS" = "active" ] && echo "OVERDUE: $(basename "$f" .md)"
+      fi
+    done
+    ;;
+  *)
+    echo "Usage: idkwtd-sessions [list|latest|latest-session|count|by-skill <skill>|active|overdue]"
+    ;;
+esac

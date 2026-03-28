@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+set -euo pipefail
+PROGRESS_DIR="$HOME/.idkwtd/analytics"
+SESSIONS_DIR="$HOME/.idkwtd/sessions"
+mkdir -p "$PROGRESS_DIR"
+
+case "${1:-show}" in
+  log)
+    # Log a progress event: idkwtd-progress log "completed assignment" "messaged 3 people"
+    echo "{\"ts\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\",\"event\":\"${2:-}\",\"detail\":\"${3:-}\"}" >> "$PROGRESS_DIR/progress.jsonl"
+    echo "Progress logged."
+    ;;
+  show)
+    echo "=== Progress Timeline ==="
+    if [ -f "$PROGRESS_DIR/progress.jsonl" ]; then
+      cat "$PROGRESS_DIR/progress.jsonl"
+    else
+      echo "No progress entries yet."
+    fi
+    ;;
+  assignment-done)
+    # Mark an assignment as completed
+    echo "{\"ts\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\",\"assignment\":\"${2:-}\",\"status\":\"completed\",\"reflection\":\"${3:-}\"}" >> "$PROGRESS_DIR/assignments.jsonl"
+    echo "Assignment marked complete."
+    ;;
+  *)
+    echo "Usage: idkwtd-progress [show|log <event> <detail>|assignment-done <assignment> <reflection>]"
+    ;;
+esac
