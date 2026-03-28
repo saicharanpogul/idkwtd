@@ -109,16 +109,58 @@ Skills available:
   /network-map    — Map your people and opportunities
 ```
 
-### Claude Projects (alternative)
+### Claude Projects (claude.ai)
 
-Copy `session/SKILL.md` into a Claude Project system prompt for the core
-experience. For the full stack, copy the skill you need. Each skill
-works standalone but gains power from the interconnections.
+1. Create a new Project
+2. Paste the contents of any `SKILL.md` into the project instructions
+3. Start a conversation
 
-### Just Reading It
+Works well for `/session`, `/reality-check`, `/fear-audit` as standalone
+sessions. No cross-skill routing or session persistence — but the
+questioning framework and anti-platitude rules still guide the conversation.
 
-The `ETHOS.md` and `references/frameworks.md` files contain thinking
-tools that work even without Claude. Read them.
+### ChatGPT
+
+1. Go to **Explore GPTs → Create**
+2. Paste a `SKILL.md` into the Instructions field
+3. Publish (private or public)
+
+The bash preamble and `AskUserQuestion` formatting won't apply, but the
+session structure, phase flow, and anti-platitude rules work as-is.
+Same approach works with **ChatGPT Projects** (paste into project instructions).
+
+### Gemini
+
+Paste a `SKILL.md` into a **Gem's** instructions. Same tradeoffs as ChatGPT.
+
+### Other LLMs
+
+Any model that accepts a system prompt can run these skills:
+- **Claude API** — pass SKILL.md as the system prompt
+- **OpenAI API** — same, as system message
+- **Local models** (Ollama, LM Studio) — paste into system prompt
+- **Perplexity, Mistral Le Chat, Grok** — paste into conversation context
+
+The skills are model-agnostic. Smarter models will follow the phase
+structure and anti-platitude rules more reliably.
+
+### What you lose outside Claude Code
+
+| Feature | Claude Code | Everything else |
+|---------|:-----------:|:---------------:|
+| Session persistence | yes | no |
+| Cross-skill routing | yes | no |
+| Assignment tracking | yes | no |
+| `/momentum` pattern analysis | yes | no |
+| Anti-platitude rules | yes | yes |
+| Questioning framework | yes | yes |
+| Phase structure | yes | yes |
+| Direction Document output | yes | partial |
+
+### Just reading it
+
+`ETHOS.md` and `references/frameworks.md` contain thinking tools that
+work without any AI. Read them.
 
 ---
 
@@ -228,7 +270,4 @@ it was worth building.
 
 ---
 
-Built by [@pogul_saicharan](https://x.com/pogul_saicharan) during a weekend
-break from [Roaster V2](https://roaster.fun).
-
-Because sometimes the builder needs building too.
+Built by [@pogul_saicharan](https://x.com/pogul_saicharan).
