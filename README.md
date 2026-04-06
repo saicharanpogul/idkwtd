@@ -136,6 +136,14 @@ bash preambles and Claude-specific tools while keeping the full phase
 structure, mode detection, and anti-platitude rules.
 Same approach works with **ChatGPT Projects** (paste into project instructions).
 
+### Gemma (Google AI Edge Gallery)
+
+1. Copy the `dist/gemma/idkwtd/` folder to your device
+2. In AI Edge Gallery, go to **Skills → (+) → Import local skill**
+3. Select the `idkwtd` folder
+
+Or load from URL if hosted on GitHub Pages. See [AI Edge Gallery skills docs](https://github.com/google-ai-edge/gallery/tree/main/skills) for details.
+
 ### Gemini
 
 Paste a `SKILL.md` into a **Gem's** instructions. Same tradeoffs as ChatGPT.
@@ -239,7 +247,8 @@ idkwtd/
 │   └── resources.md         # Professional referrals
 └── dist/                    # Ready-to-paste templates
     ├── idkwtd-gpt.md        # ChatGPT Custom GPT system prompt
-    └��─ idkwtd-claude-project.md  # Claude Projects system prompt
+    ├── idkwtd-claude-project.md  # Claude Projects system prompt
+    └── gemma/idkwtd/SKILL.md     # Google AI Edge Gallery skill
 ```
 
 ---
